@@ -1,0 +1,21 @@
+# Dex2oat extreme compilation (credits to SkyX-Arch)
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-threads=8
+
+# Audio frame tuning (credits to SkyX-Arch)
+audio.deep_buffer.media=true
+audio.offload.video=true
+audio.offload.min.duration.secs=30
+ro.audio.monitorRotation=true
+ro.config.media_vol_default=10
+ro.config.vc_call_vol_steps=11
+
+# Telephony framework config (credits to SkyX-Arch)
+persist.radio.multisim.config=dsds
+ro.telephony.default_network=33,33,33,33
+ro.telephony.iwlan_operation_mode=AP-assisted
+ro.telephony.sim.count=2
+telephony.active_modems.max_count=2
+telephony.lteOnCdmaDevice=1
