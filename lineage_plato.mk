@@ -13,6 +13,13 @@ $(call inherit-product, device/xiaomi/plato/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit keys.
+ifndef ANDROID_PRIV_KEYS_MK_INCLUDED
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+endif
+
+PRODUCT_MAINLINE_BLUETOOTH_SEPOLICY_DEV_CERTIFICATES := vendor/lineage-priv/keys/
+
 PRODUCT_NAME := lineage_plato
 PRODUCT_DEVICE := plato
 PRODUCT_MANUFACTURER := Xiaomi
