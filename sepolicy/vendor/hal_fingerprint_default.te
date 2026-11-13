@@ -1,4 +1,0 @@
-binder_call(hal_fingerprint_default, platform_app_36)
-
-allow hal_fingerprint_default fingerprint_vendor_data_file:dir rw_dir_perms;
-allow hal_fingerprint_default fingerprint_vendor_data_file:file create_file_perms;

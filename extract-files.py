@@ -90,8 +90,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('liblog.so'),
     ('vendor/lib64/mt6895/libcam.hal3a.so', 'vendor/lib64/mt6895/libcam.hal3a.ctrl.so', 'vendor/lib64/mt6895/libmtkcam_request_requlator.so'): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
-    'vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so': blob_fixup()
-        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

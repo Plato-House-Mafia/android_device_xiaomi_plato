@@ -45,32 +45,6 @@ vendor/firmware/RCV-cs35l41-dsp1-spk-prot.bin
 vendor/firmware/SPK-cs35l41-dsp1-spk-cali.bin
 vendor/firmware/SPK-cs35l41-dsp1-spk-prot.bin
 
-# Audio (Calibration)
-system_ext/bin/spkcal;DISABLE_CHECKELF
-system_ext/bin/spkcal_88263s
-system_ext/bin/spkcal_88263s_m16
-system_ext/bin/spkcal_88263s_m9
-system_ext/bin/spkcal_88263s_n12
-system_ext/bin/spkcal_88263s_n12a
-system_ext/bin/spkcal_88263s_o10
-system_ext/bin/spkcal_tfa;DISABLE_CHECKELF
-system_ext/lib64/libtfa98xx_cal.so
-vendor/etc/1khz.wav
-vendor/etc/bottom_spk.wav
-vendor/etc/bottom_spk_hp.wav
-vendor/etc/cs35l41_cal.wav
-vendor/etc/rcv.wav
-vendor/etc/rcv_pink.wav
-vendor/etc/spk.wav
-vendor/etc/spk_cal_pinknoise.wav
-vendor/etc/spk_cal_silence.wav
-vendor/etc/spk_cal_sweep.wav
-vendor/etc/spk_cal_whitenoise.wav
-vendor/etc/spk_hp.wav
-vendor/etc/stereo.wav
-vendor/etc/top_spk.wav
-vendor/etc/ultrasound.wav
-
 # Camera
 vendor/bin/hw/mt6895/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
@@ -557,11 +531,6 @@ vendor/lib64/mt6895/platos5khm6_mipi_raw_tuning.so;SYMLINK=vendor/lib64/platos5k
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
 
-# CIT
-odm/etc/cit_param_config.json
-product/app/MiuiCit/MiuiCit.apk
-vendor/etc/cit_param_config.json
-
 # Display Configs
 vendor/etc/cust_color_36.xml
 vendor/etc/cust_color_42.xml
@@ -588,7 +557,6 @@ vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Fingerprint
-product/app/goodix_sz_plato/goodix_sz_plato.apk
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
 
@@ -619,22 +587,7 @@ vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
 
 # Sensors
-vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service
-vendor/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
 vendor/etc/sensors/hals.conf
-vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
-vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc
-vendor/etc/permissions/vendor.xiaomi.sensor.citsensorservice.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so
-vendor/lib64/libhfmanagerwrapper.so
-vendor/lib64/libsensor_cal.so
-vendor/lib64/libssccalapi.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
