@@ -58,20 +58,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
         .replace_needed('libalsautils.so', 'libalsautils-v31.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
-        .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
+	.binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
-    (
-        'vendor/lib64/soundfx/libswdapaidl.so',
-        'vendor/lib64/soundfx/libswgamedapaidl.so',
-    ): blob_fixup()
-        .replace_needed('android.media.audio.common.types-V5-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
-        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
-    (
-        'vendor/lib64/libstagefrightdolby.so', 'vendor/lib64/libstagefright_soft_ac4dec.so', 
-        'vendor/lib64/libstagefright_soft_ddpdec.so', 'vendor/lib64/libdlbdsservice.so',
-        'vendor/lib64/soundfx/libswdap.so', 'vendor/lib64/soundfx/libswgamedap.so', 
-    ): blob_fixup()
-        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     ('vendor/lib64/mt6895/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6895/android.hardware.camera.provider@2.6-impl-mediatek.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/mt6895/libmtkcam_hal_android_app_cbadaptor.so': blob_fixup()

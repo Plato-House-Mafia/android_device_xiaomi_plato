@@ -17,10 +17,6 @@ $(call inherit-product-if-exists, device/xiaomi/plato-miuicamera/device.mk)
 # Display
 $(call soong_config_set_bool,surfaceflinger,register_displayservice,true)
 
-# Dolby
-PRODUCT_PACKAGES += \
-    DolbyAtmos
-
 # Fingerprint
 TARGET_HAS_UDFPS := true
 

@@ -11,10 +11,6 @@ TARGET_BOOTLOADER_BOARD_NAME := plato
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/device_framework_matrix.xml
-
 # Kernel Modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor_boot))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))

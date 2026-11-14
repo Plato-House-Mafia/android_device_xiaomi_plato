@@ -537,25 +537,6 @@ vendor/etc/cust_color_42.xml
 vendor/etc/cust_color.xml
 vendor/etc/cust_silky_brightness.xml
 
-# Dolby
-system_ext/lib64/vendor.dolby_3_8_5.hardware.dms@2.0.so
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/thermal-dolbyvision.conf
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so

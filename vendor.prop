@@ -29,12 +29,6 @@ vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
 
-# Dolby
-ro.vendor.audio.device.dbcom=dolby_common
-ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-ro.vendor.audio.dolby.dax.support=true
-ro.vendor.audio.dolby.eq.half=true
-
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=610|2444|114
